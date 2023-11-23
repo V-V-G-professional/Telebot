@@ -2,9 +2,9 @@ import requests
 import json
 from http import HTTPStatus
 from aiogram import Bot, Dispatcher, executor, types
-from tokens import API, bot
+from tokens import API, BOT_API
 
-bot = Bot(bot)
+bot = Bot(BOT_API)
 dp = Dispatcher(bot)
 
 async def on_startup(_):
